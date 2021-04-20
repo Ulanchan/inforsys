@@ -1,0 +1,35 @@
+.awal{
+    background-image: url("/assets/hero-1-bg-img.png");
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 8%;
+    h1{
+        font-size: 49px;
+        line-height: 1.5;
+        margin-right: 50px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.8;
+        margin-top: -10px;
+        margin-right: 130px;
+        color:#778899;
+    }
+}
+.p {
+    padding: 5% 8%;
+    font-size: 16px;
+    color:#778899;
+    
+}
+@media (max-width:900px){
+    .awal{
+        p{
+            margin-top: 0;
+            
+        }
+    }
+}

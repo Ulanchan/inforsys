@@ -1,0 +1,51 @@
+footer{
+    .footer{
+        background-color: #292838;
+        padding: 70px 8%;
+        text-align: left;
+        img{
+            width: 110px; 
+            height: auto;
+        }
+        .uk-list {
+            margin-top: 20px;
+            color: rgb(170, 169, 169);
+            li{
+                a:hover{
+                    color: #f8f9fa;
+                }
+            }
+        }
+        span{
+            color: rgb(170, 169, 169);
+            a{
+                padding-right: 10px;
+            }
+            a:hover{
+                color: #f8f9fa;
+                text-decoration: none;
+            }
+        }
+        .iconify{
+            font-size: 25px;
+            color: rgb(170, 169, 169);
+        }
+        .iconify:hover{
+            color: #f8f9fa;
+        }
+        h2 {
+            color: #f8f9fa;
+        }
+    }
+    .bawah{
+        background-color: #23222f;
+        width: auto;
+        height: auto;
+        p{
+            text-align:center; 
+            color: rgb(170, 169, 169);
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+}

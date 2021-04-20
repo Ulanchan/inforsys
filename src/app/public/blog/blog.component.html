@@ -1,0 +1,38 @@
+<div>
+    <div class="uk-child-width-expand@s awal" uk-grid>
+        <div class="uk-grid-item-match uk-padding">
+            <h1>We Life in the new era "Technology"</h1>
+            <p>Teknologi tentunya terus berkembang seiring zaman. Kehadiran COVID-19 juga telah berhasil mempengaruhi
+                transformasi digital. Apa saja tren teknologi yang akan mendominasi di tahun 2021? <a mat-raised-button
+                    routerLink="/login" color="accent">Simak selengkapnya di
+                    sini!</a></p>
+        </div>
+        <div class="uk-grid-item-match">
+            <img src="assets/Data_security_05.jpg" alt="">
+        </div>
+    </div>
+    <div class="uk-child-width-expand@s awal1" uk-grid>
+        <div class="uk-grid-item-match">
+            <img src="assets/blog1.png" alt="">
+        </div>
+        <div class="uk-grid-item-match uk-padding">
+            <h1>Apple Patenkan Desain Iphone Ala Parutan Keju</h1>
+            <p>Berdasarkan paten yang didaftarkan di U.S. Patent and Trademark Office, Apple menjelaskan bahwa saat ini
+                performa ponsel terus meningkat tapi kerangka yang ada tidak bisa mendistribusikan panas dengan efektif.
+                Hal ini mengakibatkan performa ponsel jadi tidak maksimal. Menurut Apple, desain parutan keju ini bisa
+                menjadi solusi bagi masalah ini karena memperluas area permukaan untuk pendinginan yang lebih baik dan
+                mendistribusikan panas dengan lebih baik.</p>
+        </div>
+    </div>
+    <div *ngFor="let item of artikel">
+        <div class="uk-child-width-expand@s awal2" uk-grid>
+            <div class="uk-grid-item-match uk-padding">
+                <h1>{{item.judul}}</h1>
+                <p>{{item.isi}}</p>
+            </div>
+            <div class="uk-grid-item-match">
+                <img src="{{item.gambar}}" alt="">
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<mat-card>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Judul Artikel</mat-label>
+        <input type="text" matInput placeholder="Judul Artikel" [(ngModel)]="judul">
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Gambar</mat-label>
+        <input type="text" matInput placeholder="Placeholder" [(ngModel)]="gambar">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Isi Artikel</mat-label>
+        <textarea matInput placeholder="Isi Artikel" [(ngModel)]="isi"></textarea>
+    </mat-form-field>
+    <div class="button uk-flex uk-flex-center">
+        <a mat-raised-button (click)="tambah_Artikel()">Simpan</a>
+    </div>
+
+</mat-card>

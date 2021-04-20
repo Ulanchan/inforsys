@@ -1,0 +1,41 @@
+<div class="button uk-flex uk-flex-right">
+    <a routerLink="/admin/simpanart" class="a"><span class="iconify" data-icon="eva:folder-add-fill"
+            data-inline="false"></span>Tambah
+        Artikel</a>
+</div>
+<div class="uk-child-width-1-3@s" uk-grid>
+    <div *ngFor="let item of artikel">
+        <div class="uk-card uk-card-default uk-card-body " *ngIf="!item.edit; else editdt">
+            <img src="{{item.gambar}}" alt="">
+            <h2>{{item.judul}}</h2>
+            <div class="button uk-flex uk-flex-right">
+                <a (click)="hapusaja(item.id)"><span class="iconify" data-icon="fluent:delete-16-filled"
+                        data-inline="false"></span></a>
+                <a (click)="edt(item)"><span class="iconify" data-icon="clarity:note-edit-solid"
+                        data-inline="false"></span></a>
+            </div>
+        </div>
+        <ng-template #editdt>
+            <mat-card class="uk-child-width-1-1@l">
+
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Judul Artikel</mat-label>
+                    <input type="text" matInput placeholder="Judul Artikel" [(ngModel)]="item.ubahjudul">
+                </mat-form-field>
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Gambar</mat-label>
+                    <input type="text" matInput placeholder="Placeholder" [(ngModel)]="item.ubahgambar">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Isi Artikel</mat-label>
+                    <textarea matInput placeholder="Isi Artikel" [(ngModel)]="item.ubahisi"></textarea>
+                </mat-form-field>
+                <div class="button uk-flex uk-flex-center">
+                    <a mat-raised-button (click)="item.edit=false">Batal</a>
+                    <a mat-raised-button (click)="edit(item)">Simpan</a>
+                </div>
+
+            </mat-card>
+        </ng-template>
+
+    </div>

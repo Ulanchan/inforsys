@@ -1,0 +1,102 @@
+.awal{
+    // background-image: url("/assets/hero-1-bg-img.png");
+    background-color: #ffffff;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 8%;
+    h1{
+        font-size: 49px;
+        line-height: 1.5;
+        margin-right: 10px;
+        font-weight: 700;
+        
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.8;
+        margin-top: -8rem;
+        margin-right: 130px;
+        color:#778899;
+    }
+    a{
+        color:#778899;
+    }
+    a:hover{
+        color:#4169E1;
+        text-decoration: none;
+    }
+}
+.awal1{
+    // background-image: url("/assets/hero-1-bg-img.png");
+    background-color: #398eee;
+    background-position: 80%;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    padding: 4% 8%;
+    img{
+        margin-top: 4rem;
+        height: 75%;
+    }
+    h1{
+        font-size: 35px;
+        line-height: 1.5;
+        margin-right: 10px;
+        font-weight: 700;
+        
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.8;
+        margin-top: 0;
+        // margin-right: 130px;
+        color:#ffffff;
+    }
+    a{
+        color:#778899;
+    }
+    a:hover{
+        color:#4169E1;
+        text-decoration: none;
+    }
+}
+.awal2{
+    // background-image: url("/assets/hero-1-bg-img.png");
+    background-color: #9b9a7a;
+    background-position: 80%;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    padding: 4% 8%;
+    img{
+        margin-top: 4rem;
+        height: 75%;
+    }
+    h1{
+        font-size: 35px;
+        line-height: 1.5;
+        margin-right: 10px;
+        font-weight: 700;
+        
+    }
+    p{
+        font-size: 17px;
+        line-height: 1.8;
+        margin-top: 0;
+        // margin-right: 130px;
+        color:#ffffff;
+    }
+    a{
+        color:#778899;
+    }
+    a:hover{
+        color:#4169E1;
+        text-decoration: none;
+    }
+}
+@media (max-width:900px){
+    .awal{
+        p{
+            margin-top: 0;
+        }
+    }
+}

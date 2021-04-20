@@ -1,0 +1,43 @@
+.uk-padding{
+    padding: 8%;
+    padding-top: 60px;
+    padding-bottom: 110px;
+    a{
+        color: #007bff;
+    }
+    p{
+        font-size: 15px;
+        color:#778899;
+        line-height: 1.8;
+    }
+    .uk-list-disc{
+        li{
+            margin-bottom: -8px;
+            font-size: 15px;
+            color:#778899;
+            line-height: 1.8;
+        }
+    }
+    h1{
+        font-size: 3.5rem;
+        text-shadow: 3px 3px 6px rgb(14 10 65 / 25%);
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .ul1{
+        li{
+            margin-bottom: -5px;
+            font-size: 15px;
+            color:#778899;
+           
+        }
+    }
+}
+
+@media (max-width:900px){
+    .uk-padding{
+        h1{
+            font-size: 36px!important;
+        }
+    }
+}

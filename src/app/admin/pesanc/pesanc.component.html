@@ -1,0 +1,15 @@
+<div class="uk-child-width-expand@s">
+    <div *ngFor="let item of pesan">
+        <div class="uk-card uk-card-default uk-card-body">
+            <ul class="uk-list">
+                <li>Nama : {{item.nama}}</li>
+                <li>Email : {{item.email}}</li>
+                <li>Pesan : {{item.isip}}</li>
+            </ul>
+            <div class="button uk-flex uk-flex-right">
+                <a (click)="hapusaja(item.id)"><span class="iconify" data-icon="fluent:delete-16-filled"
+                        data-inline="false"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
